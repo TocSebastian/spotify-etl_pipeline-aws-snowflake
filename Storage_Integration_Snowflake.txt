@@ -1,0 +1,9 @@
+create or replace storage integration spotify_project_s3_connection
+    TYPE = EXTERNAL_STAGE
+    STORAGE_PROVIDER = S3
+    ENABLED=TRUE
+    STORAGE_AWS_ROLE_ARN=''
+    STORAGE_ALLOWED_LOCATIONS = ('s3://spotify-etl-project-sebastian/')
+    COMMENT='Spotify Project storage integration to S3!';
+
+DESC integration spotify_project_s3_connection;
